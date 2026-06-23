@@ -6,7 +6,7 @@ body {
   
 }
 
-.title {
+.catalog__title {
   font-size: 40px;
   line-height: 5;
   margin: 0;
@@ -14,7 +14,7 @@ body {
   justify-content: center;
 }
 
-.product-list {
+.catalog__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -22,7 +22,7 @@ body {
   flex-wrap: wrap;
 }
 
-.product-category {
+.product-card__category {
   font-size: 12px;
   line-height: 24px;
   color: #3a3a46;
@@ -30,13 +30,13 @@ body {
   margin-bottom: 5px;
 }
 
-.product-name {
+.product-card__name {
   font-size: 20px;
   line-height: 27px;
   margin-top: 5px;
 }
 
-.product-price {
+.product-card__price {
   font-size: 20px;
   line-height: 24px;
   font-weight: bold;
@@ -45,12 +45,12 @@ body {
   
 }
 
-.product-price_rub {
+.product-card__price-rub {
   font-size: 20px;
   line-height: 24px;
 }
 
-.product-card-box {
+.product-card__box {
   box-sizing: border-box;
   max-width: 340px;
   min-height: 450px;
@@ -60,6 +60,6 @@ body {
   
 }
 
-.ingredients {
+.compound__Ingredients {
   margin: 5px;
 }
