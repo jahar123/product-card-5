@@ -4,13 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/clear-list.css">
    <title>Document</title>
 </head>
 
 <body>
-  <h1 class="catalog__title">Выберите свой продукт</h1>
+      <div class="card-container">
+      <h1 class="catalog__title">Выберите свой продукт</h1>
+    <button id="change-color-all-card">Сменить цвет всех карточки</button>
+    <button id="change-color-first-card">Сменить цвет первой карточки</button>
+    <button id="open-goole">Открыть Google.com</button>
+    <button id="output-console-log">Вывести сообщение в консоль лог</button>
 
   <ul class="product-catalog__list clear-list">
     <li class="product-card__box">
@@ -26,11 +31,12 @@
         <li class="product-compound__Ingredients">витамины C, A, PP, B и E</li>
         <li class="product-compound__Ingredients">солнцезащитные компоненты</li>
       </ul>
-
+    <div class="product-card__price-wrapper"> 
       <b class="product-card__price">Цена:</b>
       <span class="product-card__price-rub">2 750 &#8381;</span>
-    </li>
-
+    </div>
+      </li>
+      
     <li class="product-card__box">
       <img src="img/mask.png" alt="Увлажняющий крем" width="290" height="245">
 
@@ -44,10 +50,11 @@
         <li class="product-compound__Ingredients">минералы</li>
         <li class="product-compound__Ingredients">масла</li>
       </ul>
-
+    <div class="product-card__price-wrapper">   
       <b class="product-card__price">Цена:</b>
       <span class="product-card__price-rub">3 500 &#8381;</span>
-    </li>
+    </div>
+      </li>
 
     <li class="product-card__box">
       <img src="img/gel.png" alt="Товар Увлажняющая сыворотка" width="290" height="245">
@@ -62,10 +69,11 @@
         <li class="product-compound__Ingredients">витамины C, A, PP, B и E</li>
         <li class="product-compound__Ingredients">солнцезащитные компоненты</li>
       </ul>
-
+    <div class="product-card__price-wrapper">   
       <b class="product-card__price">Цена:</b>
       <span class="product-card__price-rub">1 650 &#8381;</span>
-    </li>
+    </div>
+      </li>
 
     <li class="product-card__box">
       <img src="img/set-1.png" alt="Товар Увлажняющий гель" width="290" height="245">
@@ -80,16 +88,17 @@
         <li class="product-compound__Ingredients">минералы</li>
         <li class="product-compound__Ingredients">масла</li>
       </ul>
-
+    <div class="product-card__price-wrapper">   
       <b class="product-card__price">Цена:</b>
       <span class="product-card__price-rub">4 750 &#8381;</span>
-    </li>
+    </div>
+      </li>
 
     <li class="product-card__box">
       <img src="img/set-5.png" alt="Товар Подарочный набор" width="290" height="245">
 
       <span class="product-card__category">Для нормальной кожи</span>
-      <h2 class="catalog__title">Подарочный набор</h2>
+      <h2 class="catalog__name">Подарочный набор</h2>
       <p class="catalog__text">Весь набор средств invisible symphony, крем, маска, мусс и гель для умывания.</p>
 
       <span class="product-compound">Состав:</span>
@@ -103,7 +112,8 @@
       <span class="product-card__price-rub">7 520 &#8381;</span>
     </li>
   </ul>
- 
+</div>
+  <script src="main.js"></script>
 </body>
 
 </html>
