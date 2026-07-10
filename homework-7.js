@@ -5,15 +5,16 @@ function showWeather(citi, temperatyre) {
 
 
 const SPEED_OF_LIGHT = 299792458;
-function checkSpeed (spedd) {
-if (spedd > SPEED_OF_LIGHT) { 
-   console.log('Сверхсветовая скорость');
-} else if (spedd === SPEED_OF_LIGHT) {
-   console.log('Субсветовая скорость');
+function checkSpeed(speed) {
+    if (speed > SPEED_OF_LIGHT) {
+        console.log('Сверхсветовая скорость');
+    } else if (speed === SPEED_OF_LIGHT) {
+        console.log('Субсветовая скорость');
 
-} else {
-    console.log('Скорость света');
-}}
+    } else {
+        console.log('Скорость света');
+    }
+}
 
 checkSpeed(299792458);
 
@@ -26,10 +27,11 @@ function buyProduct(budget) {
         console.log('${productName} приобретён, Спасибо за покупку!');
     }
     else {
-       const missingAmount = productPrice - budget;
-       console.log('Недостаточно средств,${missingAmount}, пополните баланс');  
-    }}
-    
+        const missingAmount = productPrice - budget;
+        console.log('Недостаточно средств,${missingAmount}, пополните баланс');
+    }
+}
+/*  */
 buyProduct(75000);
 buyProduct(69000);
 
