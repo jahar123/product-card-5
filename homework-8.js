@@ -37,7 +37,7 @@ console.log(myCar.maxSpeed);
 
        // Задание 6:
 
-function getValue(obj, propertyName) { 
+function showValue(obj, propertyName) { 
       console.log(obj[propertyName]);
 
 }       
@@ -106,7 +106,7 @@ console.log(allBooks);
 
       // Задание 10:
 
-function checkRarity(booksArray) {
+function getRareBooks(booksArray) {
   return booksArray.map(book => {
     const isRare = book.year > 2000;
     return {
@@ -116,6 +116,6 @@ function checkRarity(booksArray) {
   });
 }
 
-const finalBooksList = checkRarity(allBooks);
+const finalBooksList = getRareBooks(allBooks);
 console.log(finalBooksList);
      
