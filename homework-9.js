@@ -2,9 +2,9 @@
 // Задание 2
 import { socialComments } from './comments.js';
 
-const nambers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const filteredNamber = nambers.filter(num => num >= 5);
-console.log(filteredNamber);
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const filteredNumbers = numbers.filter(num => num >= 5);
+console.log(filteredNumbers);
 
 // Задание 3
 const kitchenAppliances = ["Тостер", "Блендер", "Чайник", "Микроволновка", "Миксер"];
@@ -16,9 +16,9 @@ function reverseArray(arr) {
     return [...arr].reverse();
 }
 
-const reversedNambers = reverseArray(filteredNamber);
+const reversedNumbers = reverseArray(filteredNumbers);
 const reversedAppliances = reverseArray(kitchenAppliances);
-console.log(reversedNambers);
+console.log(reversedNumbers);
 console.log(reversedAppliances);
 
 // Уровень 2 
@@ -32,13 +32,8 @@ console.log("Комментарии с почтой .com:", comComments);
 
 // Задание 8
 const updatedComments = socialComments.map(comment => {
-    if (comment.id <= 5) {
-        comment.postId = 2;
-    }
-    else {
-        comment.postId = 1;
-    }
-    return comment;
+   comment.postId = comment.id <= 5 ? 2 : 1;
+   return comment;
 });
 
 console.log(updatedComments);
@@ -54,34 +49,29 @@ const shortComments = socialComments.map(comment => {
 console.log(shortComments);
 
 // Задание 10
-const checkedComments = socialComments.map(comment => {
-    if (comment.body.length > 180) {
-        comment.isInvalid = true;
-    }
-    else {
-        comment.isInvalid = false;
-    }
+const validatedComments = socialComments.map(comment => {
+    comment.isInvalid = comment.body.leangth > 180;
     return comment;
 });
 
-console.log(checkedComments);
+console.log(validatedComments);
 
 // Уровень 3
 // Задание 11
-const emailsReduce = socialComments.reduce((acc, comment) => {
+const emailsByReduce = socialComments.reduce((acc, comment) => {
     acc.push(comment.email);
     return acc;
 }, []);
 
-console.log(emailsReduce);
+console.log(emailsByReduce);
 
-const emailsMap = socialComments.map(comment => comment.email);
-console.log(emailsMap);
+const emailsByMap = socialComments.map(comment => comment.email);
+console.log(emailsByMap);
 
 // Задание 12
-const stringToString = emailsMap.toString();
+const stringToString = emailsByMap.toString();
 console.log(stringToString);
 
-const stringJoin = emailsMap.join(" | ");
+const stringJoin = emailsByMap.join(" | ");
 console.log(stringJoin);
 
