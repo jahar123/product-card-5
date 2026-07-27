@@ -9,7 +9,7 @@ const catalogListContainer = document.querySelector('.product-catalog__list');
 
 // ЗАДАНИЕ 3: Создание карточки через клонирование <template>
 
-const createCardDOM = (product) => {
+const createCard = (product) => {
   if (!productTemplate) return null;
 
   const cardClone = productTemplate.content.cloneNode(true);
