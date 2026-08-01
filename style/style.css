@@ -82,3 +82,167 @@ body {
   background-position: 45px top;
   background-size: 790px 697px;   
 }
+
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 40px 84px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-col h3, .footer-col h4 {
+    margin: 0 0 10px 0;
+}
+
+.footer-col p {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin: 0;
+}
+
+.btn-reg {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-center p {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#subscribe-form {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 4px;
+    width: 344px;
+    border: 1px solid #000000;
+}
+
+#subscribe-form input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    flex-grow: 1;
+    font-size: 14px;
+    color: #000000;
+}
+
+#subscribe-form button, .btn-submit {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-col ul a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #666666;
+    font-size: 12px;
+}
+
+/* --- Стили модального окна --- */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none; /* скрыто по умолчанию */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    position: relative;
+    color: #000000;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#registration-form input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    color: #000000;
+}
+
+.btn-submit {
+    padding: 12px;
+    font-weight: bold;
+}
+
+.error-msg {
+    color: #ff4d4d;
+    font-size: 13px;
+    margin: 0;
+    display: none;
+}
