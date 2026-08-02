@@ -75,7 +75,7 @@ const renderBeautyCatalog = (productsArray) => {
   const productsToRender = productsArray.slice(0, visibleCardsCount);
 
   productsToRender.forEach((product) => {
-    const readyCard = createCardDOM(product);
+    const readyCard = createCard(product);
     if (readyCard) {
       catalogListContainer.appendChild(readyCard);
     }
