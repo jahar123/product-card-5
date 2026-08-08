@@ -1,3 +1,10 @@
+import "./homework-7.js";
+import "./homework-8.js";
+import "./homework-9.js";
+import "./homework-10.js";
+import "./homework-11.js";
+import "./Form.js";
+import "./Model.js";
 
 const changeColorCardButton = document.querySelector('#change-color-all-card');
 const productCards = document.querySelectorAll('.product-card__box');
