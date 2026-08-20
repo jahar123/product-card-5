@@ -14,8 +14,7 @@ export class Modal {
     this.#modal.classList.add('modal-showed');
     this.#overlay.classList.add('overlay-showed');
 
-    this.#overlay.removeEventListener('click', this.close);
-
+   
     this.#initClose(shouldCloseOnOverlay);
   }
 
@@ -25,6 +24,7 @@ export class Modal {
     this.#modal.classList.remove('modal-showed');
     this.#overlay.classList.remove('overlay-showed');
 
+    
     this.#overlay.removeEventListener('click', this.close);
   }
 
@@ -51,4 +51,5 @@ export class Modal {
     }
   }
 }
+
 
