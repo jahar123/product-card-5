@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Jahar",
+      "surname": "Aydamirov",
+      "email": "ajbiaseno@gmail.com",
+      "age": 27,
+      "city": "Sochi"
+    },
+    {
+      "id": "2",
+      "name": "Murad",
+      "surname": "Isaev",
+      "email": "murad@mail.ru",
+      "age": 24,
+      "city": "Hasavyrt"
+    },
+    {
+      "id": "3",
+      "name": "Aslan",
+      "surname": "Aliev",
+      "email": "aslan.al@yandex.ru",
+      "age": 31,
+      "city": "Makhachkala"
+    }
+  ]
+}
